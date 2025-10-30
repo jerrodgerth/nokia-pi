@@ -1,0 +1,23 @@
+# two node SRL topology with MultiCLI enabled
+name: two-srl-pi
+
+topology:
+  defaults:
+    kind: nokia_srlinux
+  kinds:
+    nokia_srlinux:
+      type: ixr-d3l
+      image: ghcr.io/nokia/srlinux:25.3.1
+      binds:
+        - arista:/home/auser/cli
+        - juniper:/home/juser/cli
+        - cisco-nx:/home/cnxuser/cli
+        - nokia:/home/nokuser/cli
+  nodes:
+    srl1:
+      startup-config: srl1.cfg
+    srl2:
+      startup-config: srl2.cfg
+
+  links:
+    - endpoints: ["srl1:e1-1", "srl2:e1-1"]

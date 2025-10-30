@@ -1,0 +1,20 @@
+alias ls='eza'
+alias ll='eza -l'
+alias la='eza -al'
+alias tree='eza --tree'
+
+alias ..='cd ..'
+alias ...='cd ../..'
+
+alias mkp='mkdir -p'
+alias rmf='rm -f'
+alias rmr='rm -rf'
+alias c='clear'
+alias h='history'
+
+alias bat='batcat'
+alias b='batcat'
+alias bt='btop'
+alias fast='fastfetch'
+alias lzd='lazydocker'
+alias snake='nsnake'

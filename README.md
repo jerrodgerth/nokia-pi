@@ -3,25 +3,37 @@
 
 ## Basics
 
-- DHCP, SSH & VNC are enabled for the wired ethernet port
-- Initial login credentials:
+- DHCP & SSH are enabled for the wired ethernet port
+- Hostname:
+  - raspberrpi.local 
+- Credentials:
 	- user = clab
-	- pwd = Clab123$
-- Pre-installed software
-	- Containerlab (for labs)
-	- nSnake (for terminal fun)
+	- pwd = Clab123!
+
+  e.g. `ssh clab@raspberrpi.local`
+
+
+## Pre-installed software
+	
+- Starship prompt
+- CLI utilities
+  - `eza`, `zoxide`, `lazydocker`, `fastfetch`, `btop`
+- Containerlab (for labs)
+- nSnake (for terminal fun)
+
 
 ## Containerlab notes
 
 - Installed using the `quick setup script` from [Installation page](https://containerlab.dev/install/)
-- `clab-quickstart` directory contains .yml for [Two SR Linux nodes](https://containerlab.dev/lab-examples/two-srls/) lab
-	- Starting the lab
-		- `cd ~/clab-quickstart`
-		- `clab deploy`
-	- Stoppping the lab
-		- `cd ~/clab-quickstart`
-		- `clab destroy` or `clab destroy -c` (to clean all directories)
-- *Reminder for Containerlab:* not all NOSs have ARM images; choose lab examples accordingly
+- `Labs/two-srl-pi/` directory contains `two-srl-pi.yml`
+- Starting the lab
+	- `cd ~/Labs/two-srl-pi`
+	- `clab deploy`
+- Stoppping the lab
+	- `cd ~/Labs/two-srl-pi/`
+	- `clab destroy` or `clab destroy -c` (to clean all directories)
+
+  *Reminder for Containerlab:* not all NOSs have ARM images; choose lab examples accordingly
 
 
 ## Pi Notes
@@ -31,6 +43,8 @@
 	- RAM = 8GB
 	- microSD = 32GB
 - Raspberry Pi OS
-	- Latest version as of June, 2025
+	- Latest version as of October, 2025 (Debian Trixie)
+    - **Raspberry Pi OS Lite** as the base 
+    - [Convert Raspberry Pi OS Lite into Raspberry Pi OS Desktop](https://www.raspberrypi.com/documentation/computers/os.html#convert-raspberry-pi-os-lite-into-raspberry-pi-os-desktop)
 	- WiFi & many other settings can be modified using `sudo raspi-config`
-- Official Raspberry Pi can be found [here](https://www.raspberrypi.com/documentation/)
+- Official Raspberry Pi Docs can be found [here](https://www.raspberrypi.com/documentation/)
