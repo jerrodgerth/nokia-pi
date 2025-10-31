@@ -57,3 +57,49 @@ To stop a running lab, `clab destroy` (from the directory containing the .yml fi
 To completely remove a lab, `clab destroy -c` (from the directory containing the .yml file)
 
 
+## Image Notes
+
+[Raspberry Pi OS Lite](https://www.raspberrypi.com/documentation/computers/os.html) was used as the starting point for the image on the included microSD card.  Raspberry Pi OS is built on Debian and the current release is based on [Debian Trixie](https://www.raspberrypi.com/news/trixie-the-new-version-of-raspberry-pi-os/).  If you would like to attach a monitor and other peripherals to use the Pi as a desktop, follow these [instructions](https://www.raspberrypi.com/documentation/computers/os.html#convert-raspberry-pi-os-lite-into-raspberry-pi-os-desktop).
+
+Several utilities were added for a more refined user experience...
+
+- [Starship](https://starship.rs) prompt with [no-nerd-font](https://starship.rs/presets/no-nerd-font) preset
+- [Fastfetch](https://github.com/fastfetch-cli/fastfetch) for system info 
+- [btop](https://github.com/aristocratos/btop) as a modern resource monitor 
+- [lazydocker](https://github.com/jesseduffield/lazydocker) a TUI for all things docker
+- [eza](https://eza.rocks) a modern, maintained replacement for `ls` 
+- [zoxide](https://github.com/ajeetdsouza/zoxide) a smarter `cd` command 
+- [bat](https://github.com/sharkdp/bat) better `cat` 
+
+And a [~/.bash_aliases](misc/.bash_aliases) file is included for some handy CLI shortcuts
+
+```
+alias ls='eza'
+alias ll='eza -l'
+alias la='eza -al'
+alias tree='eza --tree'
+
+alias ..='cd ..'
+alias ...='cd ../..'
+
+alias mkp='mkdir -p'
+alias rmf='rm -f'
+alias rmr='rm -rf'
+alias c='clear'
+alias h='history'
+
+alias bat='batcat'
+alias b='batcat'
+alias bt='btop'
+alias fast='fastfetch'
+alias lzd='lazydocker'
+alias snake='nsnake'
+```
+
+
+## nSnake 
+
+And it wouldn't be a Nokia thing if we didn't mention something related to phones....  So, play a game of [Snake](https://github.com/alexdantas/nSnake) if you are bored.
+
+![snake](assets/snake.png)
+
