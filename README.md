@@ -57,6 +57,21 @@ To stop a running lab, `clab destroy` (from the directory containing the .yml fi
 To completely remove a lab, `clab destroy -c` (from the directory containing the .yml file)
 
 
+## MultiCLI
+
+[MultiCLI](https://github.com/srl-labs/MultiCLI) is a project to demonstrate the extensibility of the SR Linux CLI.  One of the most common challenges with learning a new NOS & CLI is learning new commands.  MultiCLI provides some familiar commands from Arista, Cisco & Junper as well as a pattern for further customizing the CLI environment using SR Linux **Custom CLI Plugins**.  These plugins are written in Python and included with the `two-srl-pi` lab above.  
+
+For purposes of this lab, four custom users have been created, each incorporates plugins for a given vendor in the table below.  Simply login into either of the SRL nodes using these credentials to test the included commands.
+
+| User | Password | NOS |
+|------|----------|-----|
+| auser | auser | Arista EOS commands |
+| cnxuser | cnxuser | Cisco NX-OS commands |
+| juser | juser | Juniper JUNOS commands |
+| nokuser | nokuser | Nokia SR OS commands |
+
+
+
 ## Image Notes
 
 [Raspberry Pi OS Lite](https://www.raspberrypi.com/documentation/computers/os.html) was used as the starting point for the image on the included microSD card.  Raspberry Pi OS is built on Debian and the current release is based on [Debian Trixie](https://www.raspberrypi.com/news/trixie-the-new-version-of-raspberry-pi-os/).  If you would like to attach a monitor and other peripherals to use the Pi as a desktop, follow these [instructions](https://www.raspberrypi.com/documentation/computers/os.html#convert-raspberry-pi-os-lite-into-raspberry-pi-os-desktop).
@@ -99,7 +114,7 @@ alias snake='nsnake'
 
 ## nSnake 
 
-And it wouldn't be a Nokia thing if there wasn't some mention of phones....  So, play a game of [Snake](https://github.com/alexdantas/nSnake) if you are bored.
+And it wouldn't be a Nokia thing if there wasn't some mention of phones....  So, play a game of [Snake](https://github.com/alexdantas/nSnake) if you are bored.  To start a game type `snake` or `nsnake`.  Use `q` to quit.
 
 ![snake](assets/snake.png)
 
