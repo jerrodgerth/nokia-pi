@@ -72,7 +72,7 @@ For purposes of this lab, four custom users have been created, each incorporates
 
 Below is an example Arista command.  View the `README.md` in each directory for more details.
 
-![eos-arp](assets/eos.arp.png)
+![eos-arp](assets/eos-arp.png)
 
 
 ## Image Notes
