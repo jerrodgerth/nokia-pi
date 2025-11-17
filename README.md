@@ -21,7 +21,7 @@ Start an SSH session -- `ssh clab@raspberrypi.local` -- and you should see this 
 Once logged in, check for system updates, start the included SR Linux lab and get to work.
 
 ```
-sudo apt update && sudo full-upgrade -y 
+sudo apt update && sudo apt full-upgrade -y 
 ```
 
 
