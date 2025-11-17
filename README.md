@@ -18,7 +18,11 @@ Start an SSH session -- `ssh clab@raspberrypi.local` -- and you should see this 
 
 ![banner](assets/banner.png)
 
-Once logged in, you can start the included SR Linux lab and get to work.
+Once logged in, check for system updates, start the included SR Linux lab and get to work.
+
+```
+sudo apt update && sudo full-upgrade -y 
+```
 
 
 ## SR Linux Lab with MultiCLI
