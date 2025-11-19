@@ -90,5 +90,5 @@ And it wouldn't be a Nokia thing if there wasn't some mention of phones....  So,
 
 [Raspberry Pi OS Lite](https://www.raspberrypi.com/documentation/computers/os.html) was used as the starting point for the image on the included microSD card.  Raspberry Pi OS is built on Debian and the current release is based on [Debian Trixie](https://www.raspberrypi.com/news/trixie-the-new-version-of-raspberry-pi-os/).  If you would like to attach a monitor and other peripherals to use the Pi as a desktop, follow these [instructions](https://www.raspberrypi.com/documentation/computers/os.html#convert-raspberry-pi-os-lite-into-raspberry-pi-os-desktop).
 
-Several [utilities](misc/Utilities.md) were added for a more refined user experience...
+Several CLI [utilities](misc/utilities.md) were added for a more refined user experience...
 
